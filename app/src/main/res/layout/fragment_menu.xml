@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/fondo">
+
+        <Button
+            android:id="@+id/btnPrincipal"
+            android:text="Inicio"
+            android:textSize="8sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#105675"
+            style="@style/botonInicio">
+        </Button>
+
+        <Space
+            style="@style/espacio">
+        </Space>
+
+        <Button
+            android:id="@+id/btnInformacion"
+            android:text="Quienes somos"
+            android:textSize="8sp"
+            android:textColor="#105675"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            style="@style/botones">
+        </Button>
+
+        <Space
+            style="@style/espacio">
+        </Space>
+
+        <Button
+            android:id="@+id/btnServicios"
+            android:text="Servicios"
+            android:textSize="8sp"
+            android:textColor="#105675"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            style="@style/botones">
+        </Button>
+
+        <Space
+            style="@style/espacio">
+        </Space>
+
+        <Button
+            android:id="@+id/btnArticulos"
+            android:text="Articulos"
+            android:textSize="8sp"
+            android:textColor="#105675"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            style="@style/botones">
+        </Button>
+    </LinearLayout>
+</FrameLayout>

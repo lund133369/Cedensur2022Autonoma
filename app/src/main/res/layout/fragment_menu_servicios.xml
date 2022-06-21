@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuServicios">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/fondo">
+
+        <Button
+            android:id="@+id/btnPrincipal"
+            style="@style/botonInicio"
+            android:text="Inicio"
+            android:textSize="8sp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#105675">
+        </Button>
+
+        <Space
+            style="@style/espacio">
+        </Space>
+
+        <Button
+            android:id="@+id/btnReservarCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservar cita"
+            android:textSize="8sp"
+            android:textColor="#105675"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white">
+        </Button>
+
+        <Space
+            style="@style/espacio">
+        </Space>
+
+        <Button
+            android:id="@+id/btnCitas"
+            style="@style/botones"
+            android:textSize="8sp"
+            android:text="Mis Citas"
+            android:textColor="#105675"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white">
+        </Button>
+    </LinearLayout>
+</FrameLayout>

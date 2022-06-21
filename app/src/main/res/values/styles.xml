@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="botones">
+        <item name="android:layout_width">89dp</item>
+        <item name="android:layout_height">@dimen/medioLargo</item>
+    </style>
+
+    <style name="botonInicio">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">@dimen/medioLargo</item>
+    </style>
+
+    <style name="botonesInfo">
+        <item name="android:layout_width">@dimen/extralargo</item>
+        <item name="android:layout_height">@dimen/extralargo</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="espacio">
+        <item name="android:layout_width">7dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="textoNormal">
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="texto1">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="texto2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="imagen2">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="imagen3">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+    </style>
+</resources>
