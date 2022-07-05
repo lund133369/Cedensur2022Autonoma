@@ -1,5 +1,5 @@
 # Cedensur2022Autonoma
-grupo6
+GRUPO 6
 
 <h1 align="center">
   <br>
