@@ -1,4 +1,4 @@
-# Cedensur2022Autonoma
+# Cedensur2022 Autonoma
 GRUPO 6
 
 <h1 align="center">
