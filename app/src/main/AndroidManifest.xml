@@ -30,11 +30,7 @@
         <activity android:name=".DetalleServicios"
             android:theme="@style/Theme.AppCompat.Dialog" />
 
-        <activity android:name=".DetalleArticulos">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Principal"/>
-        </activity>
+        <activity android:name=".DetalleArticulos" />
 
         <activity android:name=".DetalleCita">
             <meta-data

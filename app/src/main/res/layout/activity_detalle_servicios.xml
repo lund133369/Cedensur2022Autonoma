@@ -12,7 +12,7 @@
         android:layout_marginStart="3dp"
         android:layout_marginBottom="3dp"
         android:layout_marginTop="3dp"
-        android:layout_marginEndt="3dp"
+        android:layout_marginEnd="3dp"
         app:cardCornerRadius="40dp"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -24,4 +24,10 @@ public class DetalleArticulos extends AppCompatActivity {
 
         imagen.setImageResource(bundle.getInt("imagen"));
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
 }

@@ -128,9 +128,11 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
         } else if (numero.isEmpty()) {
             Toast.makeText(this, "¡Ingrese su número por favor!", Toast.LENGTH_SHORT).show();
 
+        } else if (numero.length() < 9){
+            Toast.makeText(this, "¡El número debe ser de 9 dígitos!", Toast.LENGTH_SHORT).show();
+
         } else if (servicio == null) {
-            Toast.makeText(this, "¡Opción no Valida, por favor seleccione un servicio!",
-                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "¡Opción no Valida, por favor seleccione un servicio!", Toast.LENGTH_SHORT).show();
 
         } else if (fecha.isEmpty() || hora.isEmpty()){
             Toast.makeText(this, "!Por favor, seleccione fecha y hora¡", Toast.LENGTH_SHORT).show();
