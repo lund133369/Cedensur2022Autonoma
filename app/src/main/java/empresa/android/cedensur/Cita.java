@@ -18,7 +18,7 @@ import empresa.android.cedensur.DAO.ReservaDAO;
 public class Cita extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView lvLista;
     ArrayList<String> listado;
-    ArrayList<ReservaBean> lista = null;
+    ArrayList<ReservaBean> lista;
     ReservaDAO objReservaDAO;
     String nombre, numero, servicio, fecha;
     int codigo;

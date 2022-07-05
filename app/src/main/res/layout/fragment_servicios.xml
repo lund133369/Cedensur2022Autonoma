@@ -9,19 +9,19 @@
 
     <GridLayout
         android:id="@+id/gridServicios"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="4dp"
+        android:layout_gravity="center"
         android:columnCount="2">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardTerapiaInfantil"
             android:layout_width="160dp"
             android:layout_height="180dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             app:cardCornerRadius="20dp"
             android:backgroundTint="@color/white">
 
@@ -50,11 +50,10 @@
             android:id="@+id/cardTerapiaConductual"
             android:layout_width="160dp"
             android:layout_height="180dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             app:cardCornerRadius="20dp"
             android:backgroundTint="@color/white">
 
@@ -83,11 +82,10 @@
             android:id="@+id/cardTerapiaParejas"
             android:layout_width="160dp"
             android:layout_height="180dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             app:cardCornerRadius="20dp"
             android:backgroundTint="@color/white">
 
@@ -115,11 +113,10 @@
             android:id="@+id/cardOrientacion"
             android:layout_width="160dp"
             android:layout_height="180dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             app:cardCornerRadius="20dp"
             android:backgroundTint="@color/white">
 

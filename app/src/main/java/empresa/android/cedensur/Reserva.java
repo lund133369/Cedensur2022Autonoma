@@ -1,7 +1,5 @@
 package empresa.android.cedensur;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -14,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -28,7 +28,9 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
     int seleccion;
     String servicio;
     ArrayList<String> array;
-    ArrayAdapter adapter;
+    ArrayAdapter<String> adapter;
+    DatePickerDialog dateDialog;
+    TimePickerDialog timeDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,7 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
         array.add("Terapia de parejas");
         array.add("Orientacion Vocacional");
 
-        adapter = new ArrayAdapter(this, R.layout.item_spinner, array);
+        adapter = new ArrayAdapter<>(this, R.layout.item_spinner, array);
 
         spnServicio.setAdapter(adapter);
 
@@ -130,6 +132,9 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(this, "¡Opción no Valida, por favor seleccione un servicio!",
                     Toast.LENGTH_SHORT).show();
 
+        } else if (fecha.isEmpty() || hora.isEmpty()){
+            Toast.makeText(this, "!Por favor, seleccione fecha y hora¡", Toast.LENGTH_SHORT).show();
+
         } else {
             Intent intent = new Intent(this, DetalleReserva.class);
             intent.putExtra("nombre", nombre);
@@ -140,25 +145,26 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void elegirFecha() {
         calendar = Calendar.getInstance();
         int anio = calendar.get(Calendar.YEAR);
         int mes = calendar.get(Calendar.MONTH);
         int dia = calendar.get(Calendar.DAY_OF_MONTH);
 
-        DatePickerDialog dateDialog;
-        dateDialog = new DatePickerDialog(this, (view, year, month, day) -> txtFecha.setText(day + "/" + (month+1) + "/" + year), dia, mes, anio);
+        dateDialog = new DatePickerDialog(this, (view, year, month, day) -> txtFecha.setText(day + "/"+ (month + 1) + "/" + year), anio, mes, dia);
+
+        dateDialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
 
         dateDialog.show();
     }
 
+    @SuppressLint("SetTextI18n")
     public void elegirHora() {
         calendar = Calendar.getInstance();
         int hora = calendar.get(Calendar.HOUR_OF_DAY);
         int minutos = calendar.get(Calendar.MINUTE);
 
-        @SuppressLint("SetTextI18n")
-        TimePickerDialog timeDialog;
         timeDialog = new TimePickerDialog(this, (view, hour, minute) -> txtHora.setText(hour + ":" + minute), hora, minutos, false);
 
         timeDialog.show();
