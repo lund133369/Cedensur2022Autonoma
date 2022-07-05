@@ -3,7 +3,7 @@ grupo6
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <img src="https://raw.githubusercontent.com/lund133369/Cedensur2022Autonoma/master/app/src/main/res/drawable-v24/icono.png" alt="Markdownify" width="200"></a>
   <br>
   Markdownify
   <br>
