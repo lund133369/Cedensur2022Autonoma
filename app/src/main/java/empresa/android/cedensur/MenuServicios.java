@@ -32,6 +32,7 @@ public class MenuServicios extends Fragment implements View.OnClickListener{
     public void Inicio() {
         Intent intent = new Intent(getActivity(), Principal.class);
         startActivity(intent);
+        requireActivity().finishAffinity();
     }
 
     public void Reservar() {

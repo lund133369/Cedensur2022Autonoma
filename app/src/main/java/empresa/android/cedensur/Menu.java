@@ -49,6 +49,7 @@ public class Menu extends Fragment implements View.OnClickListener {
     public void Volver() {
         Intent intent = new Intent(getActivity(), Principal.class);
         startActivity(intent);
+        requireActivity().finishAffinity();
     }
 
     @Override

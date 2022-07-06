@@ -61,7 +61,7 @@ public class Principal extends AppCompatActivity implements ComunicaMenu {
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
         alerta.setMessage("¿Desea salir de la aplicación?")
                 .setCancelable(false)
-                .setPositiveButton("Sí", (dialog, i) -> finish())
+                .setPositiveButton("Sí", (dialog, i) -> System.exit(0))
 
                 .setNegativeButton("No", (dialog, i) -> dialog.cancel());
 
