@@ -154,7 +154,7 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
         int mes = calendar.get(Calendar.MONTH);
         int dia = calendar.get(Calendar.DAY_OF_MONTH);
 
-        dateDialog = new DatePickerDialog(this, (view, year, month, day) -> txtFecha.setText(day + "/"+ (month + 1) + "/" + year), anio, mes, dia);
+        dateDialog = new DatePickerDialog(this, (datePicker, year, month, day) -> txtFecha.setText(day + "/"+ (month + 1) + "/" + year), anio, mes, dia);
 
         dateDialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
 
@@ -167,7 +167,21 @@ public class Reserva extends AppCompatActivity implements View.OnClickListener {
         int hora = calendar.get(Calendar.HOUR_OF_DAY);
         int minutos = calendar.get(Calendar.MINUTE);
 
-        timeDialog = new TimePickerDialog(this, (view, hour, minute) -> txtHora.setText(hour + ":" + minute), hora, minutos, false);
+        timeDialog = new TimePickerDialog(this, (timePicker, hour, minute) -> {
+            String horaSeleccionada, am_pm;
+
+            if (hour > 12) {
+                hour = hour - 12;
+                am_pm = "p.m.";
+
+            } else {
+                am_pm = "a.m.";
+            }
+
+            horaSeleccionada = hour + ":" + minute + " " + am_pm;
+
+            txtHora.setText(horaSeleccionada);
+        }, hora, minutos, false);
 
         timeDialog.show();
     }
